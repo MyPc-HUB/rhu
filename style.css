@@ -1,0 +1,300 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245,245,245);
+}
+
+
+div .Intro{
+    width: 100%;
+    height: 600px;
+    background-color:tomato; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px; 
+    padding-left: 100px; 
+    background-image: url(peakpx.jpg);
+    background-repeat: no-repeat;
+    background-size: 1950px 600px;
+}
+
+.IntroHeader h1 {
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 200px;
+    height: fit-content;
+}
+div .IntroDescription p{
+    width: 500px;
+    margin-top: 30px;
+    margin-left: 25px;
+    font-size: 20px;
+    text-align: start;
+    color: white;
+}
+
+/* Animation */
+.animation{
+    color: white;
+}
+.wrapper{
+    display: inline-flex;
+}
+.static{
+    font-size: 30px;
+    font-weight: 600;
+}
+.dynamic{
+    white-space: nowrap;
+    margin-top: 3px;
+    padding-left:10px;
+    width: fit-content;
+    height: 40px;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    animation: slide 2s infinite ;
+}
+@keyframes slide{
+    from{width: 0px;}
+    to{width: 200px;}
+}
+.dynamic li{
+    list-style: none;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    top: 0px;
+    animation: round 4s steps(2) infinite;
+}
+@keyframes round{
+    100%{top: -90px;
+    }
+}
+/* Animation End */
+.Content{
+    display: flex;
+    align-items: center;
+}
+.Content1{
+    width: 300px;
+    height: 350x;
+}
+.Content1:hover{
+    border: 2px solid cyan;
+    transition: 0.1s ease-in;
+}
+
+.Content2{
+    width: 300px;
+    height: 380px;
+    margin-left: 100px;
+}
+.Content2:hover{
+    border: 2px solid cyan;
+    transition: 0.1s ease-out;  
+}
+.watch{
+    font-size: 40px;
+    width: 550px;
+    height: 200px;
+    margin-left: 400px;
+    margin-top: -150px;
+    text-align: center;
+    line-height: 100px;
+    color: aliceblue;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    height: 100%;
+}
+.foot1{
+    font-size: 110px;
+    color: white;
+    display: flex;
+    align-items: start;
+    margin-top: -100px;
+    position: absolute;
+}
+.foot2{
+    font-size: 40px;
+    margin-top: 60px;
+    margin-right: 20px;
+    position: absolute;
+    color: white;
+}
+.foot2 i{
+    padding-left: 20px;
+}
+.foot2 a{
+    text-decoration: none;
+    color: black;
+}
+.foot3{
+    margin-top: 200px;
+    color: white;
+    background-color: black;
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PC view */
+@media (min-width:1201px) and (max-width:1500px){
+    div .Intro{
+        width: 100%;
+        height: 600px;
+        background-color:tomato; 
+        background-image: url(peakpx.jpg); 
+        background-size: 650px 600px;
+    }
+}
+
+/* mobile view */
+@media (max-width:768px){
+    div .Intro{
+        width: 100%;
+        height: 500px;
+        background-color:#1235ba;
+        background-image: url(peakpx.jpg);
+        background-size: 800px 600px ;
+        background-position: 0px;
+    }
+    .IntroHeader h1 {
+        display: inline;
+        font-size: 30px;
+        width: 300px;
+        font-size: 5vw;
+        font-weight: 900;
+        padding-right: 200px;
+        height: fit-content;
+    }
+    div .IntroDescription p{
+        margin-left: -30px;
+        margin-top: 10px;
+        width: 300px;
+        font-size: 20px;
+        text-align: start;
+    }
+    .Content{
+        display: block;
+    }
+    .Content1{
+        width: 50%;
+        height: 50%;
+        font-size: small;
+    }
+    .Content2{
+        width: 50%;
+        font-size: small;
+        margin-left: 50px;
+    }
+    .watch{
+       display: none;
+    }
+    .wrapper{
+        display: flex;
+    }
+    .wrapper .static{
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    .dynamic{
+        white-space: nowrap;
+        margin-top: 2px;
+        padding-left:10px;
+        width: fit-content;
+        height: 35px;
+        overflow-x: hidden;
+        overflow-y:hidden;
+        animation: slide 2s infinite ;
+    }
+    .wrapper .dynamic li{
+        height: fit-content;
+        list-style: none;
+        font-size: 20px;
+        font-weight: 0;
+        position: relative;
+        top: 0px;
+        animation: round 4s steps(2) infinite;
+    }
+    @keyframes round{
+        100%{top: -60px;
+        }
+    }
+    footer{
+        margin-top: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: gray;
+        height: 100%;
+    }
+}
+
+/* tablet view */
+@media (min-width:769px) and (max-width:1499px){
+    div .Intro{
+        width: 100%;
+        height: 600px;
+        background-color:#0A3BC8; 
+        background-image: url(peakpx.jpg);
+        background-position: 0%;
+        background-size: 1500px 600px;
+    }
+    .wrapper {
+        font-size: 5vw;
+    }
+    .wrapper .dynamic{
+        font-size: 2vw;
+        margin-top: 3px;
+        width: fit-content;
+        height: 40px;
+        overflow: hidden;
+    }
+    div .IntroDescription p{
+        width: 450px;
+        font-size: 20px;
+        text-align: start;
+        color: white;
+    }
+    .Content{
+        display: flex;
+    }
+    .Content1{
+        width: 50%;
+        height: 50%;
+        font-size: small;
+    }
+    .Content2{
+        width: 50%;
+        height: 50%;
+        font-size: small;
+    }
+    .watch{
+       display: none;
+    }
+    footer{
+        margin-top: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: gray;
+        height: 100%;
+    }
+}

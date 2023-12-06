@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fced705f68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="RHU.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Heder -->
+    <Header>
+        <nav class="navbar navbar-expand-xl navbar-light bg-primary">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand "><img src="RHU.png" alt="RHU" style="margin-left: 100px;"></a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavID"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="NavID">
+                    <ul class="navbar-nav mx-auto" style="position: relative;">
+                        <li class="nav-item">
+                            <a href="" class="nav-link dropdown dropdown-toggle" data-bs-toggle="dropdown">Game</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="guess.html" class="dropdown-item">Guess The Number</a></li>
+                                    <li><a href="Dice.html" class="dropdown-item">Dice Rolling</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link dropdown dropdown-toggle" data-bs-toggle="dropdown">Others</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Random.html" class="dropdown-item" target="blank">Random Number</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="About.html" class="nav-link" target="_blank">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </Header>
+
+    <!-- Intro Div -->
+    <section>
+    <div>
+        <div class="Intro">
+            <div  class="IntroHeader">
+                <h1>Passionate to web Designing</h1>           
+                <div class="IntroDescription">
+                    <P class="">Passionate to coding programming.This is my first web page design. There is no limit to learn to be proffesional. </P>
+                    <a href="About.html"><button type="button" class="btn btn-primary ms-5">Learn More</button></a><br><br><br><br>
+                    <!-- Animation -->
+                    <div class="animation">
+                        <div class="wrapper">
+                            <div class="static">This is my first</div>
+                            <ul class="dynamic">
+                                <li><span>Web Design</span></li>
+                                <li><span>CSS Style</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Animation End -->
+                </div>
+            </div>
+    </div>
+    </section>
+     
+    <!-- Content -->
+    <div class="Content">
+        <div class="Content1 card m-5 shadow"> 
+           <img src="https://lh3.googleusercontent.com/8k5Ygckx5AusFDE6cV2L3eAncigQdqkQAmGuSGt66MRGxVpPoONhDNDQvZSmI_F5gO7jCzCYNb_zYGLNQZzhaKnl5wI=w640-h400-e365-rj-sc0x00ffffff" alt="" class="img-thumbnail">
+           <div class="card-body "></div>
+           <h5 class="card-title text-center">Random Number Generator</h5>
+           <p class="card-text p-1 text-center">You can generate integer number for multiple times.</p>
+           <a href="Random.html" target="_blank" class="btn btn-primary stretched-link ">Get Start</a>
+        </div>
+        <div class="Content2 shadow card">
+            <img src="https://m.media-amazon.com/images/I/71jgOh9AaBL.png" alt="" class="img-thumbnail" style="height: 190px;">
+            <div class="card-body "></div>
+            <h5 class="card-title text-center">Guess The Number</h5>
+            <p class="card-text p-1 text-center">Guess the number between 1 and 100. Play and win the game.</p>
+            <a href="guess.html" target="_blank" class="btn btn-primary stretched-link">Play Now</a>
+        </div>
+        <div class="watch shadow-lg bg-warning ">
+            <span class="time p-1 "></span>
+            <span class="AmPm pe-5 ps-1 "></span>
+            <span class="date "></span>
+            <script src="watch.js">
+            </script>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="foot1 user-select-none">
+            RHU
+        </div>
+        <div class="foot2">
+            <a href="https://facebook.com/rabeul.hasan.77" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="foot3">
+            &copy Copyright 2023
+        </div>
+    </footer>
+</body>
+</html>
